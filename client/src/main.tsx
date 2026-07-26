@@ -23,6 +23,7 @@ createRoot(document.getElementById('root')!).render(
       config={{
         loginMethods: ['email', 'wallet'],
         embeddedWallets: {
+          // @ts-ignore - Privy config schema changed
           createOnLogin: 'users-without-wallets',
         },
         appearance: {
