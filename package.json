@@ -1,0 +1,22 @@
+{
+  "name": "dollyeo-fullstack",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "typecheck": "tsc --noEmit",
+    "screenshots": "tsx scripts/screenshots.ts",
+    "test": "tsx --test tests/api.test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^7.9.0",
+    "prisma": "^7.9.0"
+  }
+}

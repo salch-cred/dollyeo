@@ -1,0 +1,139 @@
+{
+  "cases": [
+    {
+      "id": "DL-59443",
+      "transactionHash": "0x0d8f1f9c803289b71e902b74a09c28491dollyeo",
+      "chainId": 91342,
+      "asset": "USDT",
+      "amount": 12400,
+      "from": "0x71A4b2A1902F",
+      "to": "0x9C21E8f2dA9784AD",
+      "incidentType": "voice_phishing",
+      "description": "Submitted through the protected incident workflow.",
+      "status": "under_review",
+      "progress": 32,
+      "createdAt": "2026-07-24T19:24:48.454Z",
+      "updatedAt": "2026-07-24T19:24:48.454Z"
+    },
+    {
+      "id": "DL-11457",
+      "transactionHash": "0x0d8f1f9c803289b71e902b74a09c28491dollyeo",
+      "chainId": 91342,
+      "asset": "USDT",
+      "amount": 12400,
+      "from": "0x71A4b2A1902F",
+      "to": "0x9C21E8f2dA9784AD",
+      "incidentType": "voice_phishing",
+      "description": "Submitted through the protected incident workflow.",
+      "status": "under_review",
+      "progress": 32,
+      "createdAt": "2026-07-24T19:23:29.346Z",
+      "updatedAt": "2026-07-24T19:23:29.346Z"
+    },
+    {
+      "id": "DL-86023",
+      "transactionHash": "0x1234567890abcdef",
+      "chainId": 91342,
+      "asset": "USDT",
+      "amount": 99,
+      "from": "0x71A4b2A1902F",
+      "to": "0x9C21E8f2dA9784AD",
+      "incidentType": "voice_phishing",
+      "description": "Submitted through the protected incident workflow.",
+      "status": "under_review",
+      "progress": 32,
+      "createdAt": "2026-07-24T18:30:18.531Z",
+      "updatedAt": "2026-07-24T18:30:18.531Z"
+    },
+    {
+      "id": "DL-28491",
+      "transactionHash": "0x0d8f1f9c803289b71e902b74a09c28491dollyeo",
+      "chainId": 91342,
+      "asset": "USDT",
+      "amount": 12400,
+      "from": "0x71A4b2A1902F",
+      "to": "0x9C21E8f2dA9784AD",
+      "incidentType": "voice_phishing",
+      "description": "Caller impersonated a prosecutor and requested a safety transfer.",
+      "status": "under_review",
+      "progress": 68,
+      "createdAt": "2026-07-24T18:22:18.444Z",
+      "updatedAt": "2026-07-24T18:30:18.452Z"
+    },
+    {
+      "id": "DL-28104",
+      "transactionHash": "0x8ca3e1882dollyeo28104",
+      "chainId": 91342,
+      "asset": "ETH",
+      "amount": 2.84,
+      "from": "0x71A4b2A1902F",
+      "to": "0x81B71bC022C0",
+      "incidentType": "investment_scam",
+      "description": "Fraudulent investment platform transfer.",
+      "status": "returned",
+      "progress": 100,
+      "createdAt": "2026-07-21T18:30:18.453Z",
+      "updatedAt": "2026-07-22T18:30:18.453Z",
+      "attestationId": "AT-9402"
+    }
+  ],
+  "threats": [
+    {
+      "address": "0x9C21E8f2dA9784AD",
+      "risk": "critical",
+      "score": 82,
+      "attestationId": "AT-94821",
+      "issuer": "Mock FIU Korea",
+      "linkedIncidents": 4,
+      "expiresAt": "2026-07-25T18:30:18.453Z",
+      "updatedAt": "2026-07-24T18:28:18.453Z"
+    },
+    {
+      "address": "0x81B71bC022C0",
+      "risk": "elevated",
+      "score": 64,
+      "attestationId": "AT-94818",
+      "issuer": "Hanbit Bank",
+      "linkedIncidents": 2,
+      "expiresAt": "2026-07-26T18:30:18.453Z",
+      "updatedAt": "2026-07-24T18:18:18.453Z"
+    },
+    {
+      "address": "0xE9129081A881",
+      "risk": "cleared",
+      "score": 8,
+      "attestationId": "AT-94702",
+      "issuer": "GIWA VASP Lab",
+      "linkedIncidents": 0,
+      "expiresAt": "2026-07-27T18:30:18.453Z",
+      "updatedAt": "2026-07-24T15:30:18.453Z"
+    }
+  ],
+  "issuers": [
+    {
+      "id": "issuer-fiu-demo",
+      "name": "Mock FIU Korea",
+      "wallet": "0xF1U000000000D011",
+      "jurisdiction": "KR",
+      "verified": true,
+      "online": true
+    },
+    {
+      "id": "issuer-hanbit",
+      "name": "Hanbit Bank",
+      "wallet": "0xB4NK000000000241",
+      "jurisdiction": "KR",
+      "verified": true,
+      "online": true
+    },
+    {
+      "id": "issuer-giwa-lab",
+      "name": "GIWA VASP Lab",
+      "wallet": "0xVASP0000000091342",
+      "jurisdiction": "KR",
+      "verified": true,
+      "online": true
+    }
+  ],
+  "attestations": []
+}

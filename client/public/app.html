@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#07120f" />
+  <meta name="description" content="Dollyeo — a verifiable freeze and refund rail for crypto fraud victims, built on GIWA." />
+  <title>Dollyeo — Give it back</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="clay-theme.css" />
+  <link rel="stylesheet" href="liquid-motion.css" />
+  <link rel="stylesheet" href="brand-polish.css" />
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div><div class="noise"></div>
+  <div id="toast" class="toast glass" role="status"><i class="hgi hgi-stroke hgi-checkmark-circle-02"></i><span>Action completed</span></div>
+
+  <div class="app-shell">
+    <aside class="sidebar glass">
+      <a class="brand" href="#" aria-label="Dollyeo home">
+        <span class="brand-mark"><span>ㄷ</span></span>
+        <span><strong>Dollyeo</strong><small>Give it back</small></span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <button class="nav-item active" data-view="overview"><i class="hgi hgi-stroke hgi-dashboard-square-01"></i><span>Overview</span></button>
+        <button class="nav-item" data-view="report"><i class="hgi hgi-stroke hgi-alert-02"></i><span>Report incident</span></button>
+        <button class="nav-item" data-view="cases"><i class="hgi hgi-stroke hgi-file-verified"></i><span>My cases</span><em>2</em></button>
+        <button class="nav-item" data-view="registry"><i class="hgi hgi-stroke hgi-shield-blockchain"></i><span>Threat registry</span></button>
+        <button class="nav-item" data-view="console"><i class="hgi hgi-stroke hgi-police-badge"></i><span>Issuer console</span><b>PRO</b></button>
+      </nav>
+      <div class="sidebar-spacer"></div>
+      <div class="network-card glass-inset">
+        <span class="pulse-dot"></span><div><small>Network</small><strong>GIWA Sepolia</strong></div><span class="chain-id">91342</span>
+      </div>
+      <button class="nav-item"><i class="hgi hgi-stroke hgi-settings-02"></i><span>Settings</span></button>
+      <div class="user-row">
+        <span class="avatar">SK</span><div><strong>Salman</strong><small>0x71A4...09F2</small></div><button aria-label="More"><i class="hgi hgi-stroke hgi-more-horizontal-circle-01"></i></button>
+      </div>
+    </aside>
+
+    <main>
+      <header class="topbar">
+        <div class="mobile-brand"><span class="brand-mark">ㄷ</span><strong>Dollyeo</strong></div>
+        <div class="search glass"><i class="hgi hgi-stroke hgi-search-01"></i><input aria-label="Search" placeholder="Search case, wallet or transaction…"><kbd>⌘ K</kbd></div>
+        <div class="header-actions">
+          <button class="icon-btn glass" aria-label="Notifications"><i class="hgi hgi-stroke hgi-notification-02"></i><span></span></button>
+          <button class="wallet-btn glass"><span class="status-dot"></span><span>0x71A4…09F2</span><i class="hgi hgi-stroke hgi-arrow-down-01"></i></button>
+          <button id="mobileMenu" class="icon-btn mobile-menu glass" aria-label="Open menu"><i class="hgi hgi-stroke hgi-menu-02"></i></button>
+        </div>
+      </header>
+
+      <section id="overview" class="view active-view">
+        <div class="hero reveal">
+          <div><div class="eyebrow"><span class="live-dot"></span>Protection is active</div><h1>Your money deserves<br><span>a way back.</span></h1><p>Dollyeo gives verified authorities a narrow, transparent window to stop stolen crypto—without giving up self-custody.</p><div class="hero-actions"><button class="primary-btn" data-go="report"><i class="hgi hgi-stroke hgi-alert-02"></i> Report an incident</button><button class="secondary-btn glass" id="watchDemo"><i class="hgi hgi-stroke hgi-play-circle"></i> See how it works</button></div></div>
+          <div class="protection-orbit" aria-label="Protection visual">
+            <div class="orbit orbit-1"></div><div class="orbit orbit-2"></div><div class="orbit orbit-3"></div>
+            <div class="shield-core"><i class="hgi hgi-stroke hgi-shield-02"></i><span>Protected</span><small>30 min window</small></div>
+            <div class="float-chip chip-a glass"><i class="hgi hgi-stroke hgi-justice-scale-01"></i><span>Due process</span></div>
+            <div class="float-chip chip-b glass"><i class="hgi hgi-stroke hgi-blockchain-02"></i><span>On-chain proof</span></div>
+            <div class="float-chip chip-c glass"><i class="hgi hgi-stroke hgi-lock-sync-01"></i><span>Self-custody</span></div>
+          </div>
+        </div>
+
+        <div class="metrics-grid reveal delay-1">
+          <article class="metric glass"><div class="metric-icon mint"><i class="hgi hgi-stroke hgi-money-safe"></i></div><div><small>Funds protected</small><strong>₩1.84B</strong><span class="up">↗ 18.4% this month</span></div><canvas class="spark" data-color="#7df7c5"></canvas></article>
+          <article class="metric glass"><div class="metric-icon blue"><i class="hgi hgi-stroke hgi-file-verified"></i></div><div><small>Resolved cases</small><strong>1,284</strong><span>94.2% recovery rate</span></div><canvas class="spark" data-color="#79a8ff"></canvas></article>
+          <article class="metric glass"><div class="metric-icon coral"><i class="hgi hgi-stroke hgi-timer-02"></i></div><div><small>Median response</small><strong>08:42</strong><span>minutes to freeze</span></div><canvas class="spark" data-color="#ff957d"></canvas></article>
+          <article class="metric glass"><div class="metric-icon violet"><i class="hgi hgi-stroke hgi-shield-user"></i></div><div><small>Verified issuers</small><strong>24</strong><span>banks, VASPs & agencies</span></div><canvas class="spark" data-color="#b49aff"></canvas></article>
+        </div>
+
+        <div class="dashboard-grid reveal delay-2">
+          <article class="panel glass activity-panel"><div class="panel-head"><div><span class="section-label">LIVE NETWORK</span><h2>Protection activity</h2></div><select aria-label="Period"><option>Last 7 days</option><option>Last 30 days</option></select></div><div class="chart-wrap"><div class="chart-value"><strong>₩483.2M</strong><span>protected this week</span></div><canvas id="activityChart"></canvas></div><div class="chart-legend"><span><b class="legend-mint"></b>Protected</span><span><b class="legend-blue"></b>Returned</span></div></article>
+          <article class="panel glass cases-panel"><div class="panel-head"><div><span class="section-label">YOUR ACTIVITY</span><h2>Recent cases</h2></div><button data-go="cases">View all <i class="hgi hgi-stroke hgi-arrow-right-01"></i></button></div><div class="case-list">
+            <button class="case-row"><span class="case-icon warning"><i class="hgi hgi-stroke hgi-clock-02"></i></span><span><strong>Case #DL-28491</strong><small>USDT · 12,400</small></span><span class="status pending">Under review</span><time>8m</time></button>
+            <button class="case-row"><span class="case-icon success"><i class="hgi hgi-stroke hgi-checkmark-circle-02"></i></span><span><strong>Case #DL-28104</strong><small>ETH · 2.84</small></span><span class="status resolved">Returned</span><time>2d</time></button>
+            <button class="case-row"><span class="case-icon neutral"><i class="hgi hgi-stroke hgi-shield-02"></i></span><span><strong>Protection enabled</strong><small>Wallet 0x71A4…09F2</small></span><span class="status active">Active</span><time>5d</time></button>
+          </div></article>
+        </div>
+
+        <div class="safety-strip glass reveal delay-3"><div class="safety-art"><i class="hgi hgi-stroke hgi-security-check"></i></div><div><span class="section-label">BEFORE YOU SEND</span><h2>Check a wallet in one second.</h2><p>Search Dollyeo’s attested threat registry before moving funds.</p></div><div class="wallet-check glass-inset"><input id="walletCheck" placeholder="Paste wallet address"><button id="checkWallet"><i class="hgi hgi-stroke hgi-search-01"></i> Check</button></div></div>
+      </section>
+
+      <section id="report" class="view form-view">
+        <div class="page-title reveal"><button class="back-btn" data-go="overview"><i class="hgi hgi-stroke hgi-arrow-left-02"></i></button><div><span class="section-label">EMERGENCY RESPONSE</span><h1>Report an incident</h1><p>Speed matters. A complete report helps verified responders act faster.</p></div></div>
+        <div class="stepper reveal"><div class="step active"><span>1</span><strong>Transaction</strong></div><i></i><div class="step"><span>2</span><strong>Incident</strong></div><i></i><div class="step"><span>3</span><strong>Identity</strong></div><i></i><div class="step"><span>4</span><strong>Review</strong></div></div>
+        <form id="incidentForm" class="form-card glass reveal delay-1">
+          <div class="form-copy"><span class="form-number">01</span><div><h2>Which transaction was fraudulent?</h2><p>Enter the transaction hash. We’ll securely fetch the public on-chain details.</p></div></div>
+          <label>Transaction hash<div class="input-wrap"><i class="hgi hgi-stroke hgi-blockchain-01"></i><input required id="txHash" placeholder="0x…"><button type="button" id="pasteDemo">Use demo</button></div></label>
+          <div id="txPreview" class="tx-preview"><div><small>FROM</small><strong>0x71A4…09F2</strong></div><i class="hgi hgi-stroke hgi-arrow-right-02"></i><div><small>TO</small><strong>0x9C21…84AD</strong></div><div class="tx-amount"><small>AMOUNT</small><strong>12,400 USDT</strong></div><span class="risk-badge"><i class="hgi hgi-stroke hgi-alert-circle"></i> High risk</span></div>
+          <div class="form-note"><i class="hgi hgi-stroke hgi-information-circle"></i><p>Dollyeo cannot move funds or freeze a wallet. Your report creates evidence for a verified external issuer to review.</p></div>
+          <div class="form-footer"><span><i class="hgi hgi-stroke hgi-lock-key"></i> Encrypted & privacy-preserving</span><button class="primary-btn" type="submit">Continue <i class="hgi hgi-stroke hgi-arrow-right-01"></i></button></div>
+        </form>
+      </section>
+
+      <section id="cases" class="view generic-view"><div class="page-title"><div><span class="section-label">CASE CENTER</span><h1>My cases</h1><p>Track evidence, attestations and recovery in real time.</p></div><button class="primary-btn" data-go="report"><i class="hgi hgi-stroke hgi-add-01"></i> New report</button></div><div class="case-board glass"><div class="case-board-head"><button class="active">All cases <span>2</span></button><button>Under review <span>1</span></button><button>Resolved <span>1</span></button></div><div class="large-case"><div class="case-progress-ring">68%</div><div><span class="status pending">Under review</span><h2>Case #DL-28491</h2><p>12,400 USDT · GIWA Sepolia · Submitted 8 minutes ago</p><div class="timeline"><span class="done">Report signed</span><span class="done">Evidence verified</span><span class="current">Issuer review</span><span>Freeze attestation</span><span>Resolution</span></div></div><button class="secondary-btn">Open case <i class="hgi hgi-stroke hgi-arrow-right-01"></i></button></div><div class="large-case"><div class="case-progress-ring complete"><i class="hgi hgi-stroke hgi-checkmark-circle-02"></i></div><div><span class="status resolved">Funds returned</span><h2>Case #DL-28104</h2><p>2.84 ETH · Resolved 2 days ago · Attestation #AT-9402</p></div><button class="secondary-btn">View receipt <i class="hgi hgi-stroke hgi-arrow-right-01"></i></button></div></div></section>
+
+      <section id="registry" class="view generic-view"><div class="page-title"><div><span class="section-label">PUBLIC GOOD</span><h1>Threat registry</h1><p>Privacy-safe, issuer-attested intelligence for wallets and VASPs.</p></div></div><div class="registry-search glass"><i class="hgi hgi-stroke hgi-search-01"></i><input placeholder="Search wallet, transaction or attestation ID"><button>Search registry</button></div><div class="registry-stats"><div class="glass"><small>Attested addresses</small><strong>18,492</strong></div><div class="glass"><small>Issuers online</small><strong>24 / 24</strong></div><div class="glass"><small>Last block</small><strong>#9,842,114</strong></div></div><div class="registry-table glass"><div class="table-row table-head"><span>Address</span><span>Risk</span><span>Attestation</span><span>Issuer</span><span>Updated</span></div><div class="table-row"><strong>0x9C21…84AD</strong><span class="status danger">Critical</span><code>#AT-94821</code><span>Mock FIU Korea</span><time>2m ago</time></div><div class="table-row"><strong>0x81B7���22C0</strong><span class="status pending">Elevated</span><code>#AT-94818</code><span>Hanbit Bank</span><time>12m ago</time></div><div class="table-row"><strong>0xE912…A881</strong><span class="status resolved">Cleared</span><code>#AT-94702</code><span>GIWA VASP Lab</span><time>3h ago</time></div></div></section>
+
+      <section id="console" class="view generic-view"><div class="page-title"><div><span class="section-label">VERIFIED ISSUER WORKSPACE</span><h1>Issuer console</h1><p>Issue a limited, expiring attestation—never a discretionary admin freeze.</p></div><span class="verified-pill"><i class="hgi hgi-stroke hgi-certificate-01"></i> Mock issuer verified</span></div><div class="console-grid"><div class="console-form glass"><h2>Create freeze attestation</h2><label>Case number<input value="KR-FIU-2026-0948"></label><label>Target smart account<input value="0x9C21E8f2dA9784AD"></label><div class="two-inputs"><label>Challenge period<select><option>30 minutes</option><option>60 minutes</option></select></label><label>Expires in<select><option>24 hours</option><option>48 hours</option></select></label></div><label>Evidence digest<textarea>Voice-phishing report matched to transfer and victim-signed claim.</textarea></label><button id="issueAttestation" class="primary-btn"><i class="hgi hgi-stroke hgi-certificate-01"></i> Sign mock attestation</button></div><div class="policy-card glass"><div class="policy-orb"><i class="hgi hgi-stroke hgi-justice-scale-01"></i></div><h2>Due process, encoded.</h2><ul><li><i class="hgi hgi-stroke hgi-checkmark-circle-02"></i>Verified external issuer only</li><li><i class="hgi hgi-stroke hgi-checkmark-circle-02"></i>Public reason and expiry</li><li><i class="hgi hgi-stroke hgi-checkmark-circle-02"></i>Opt-in protected accounts</li><li><i class="hgi hgi-stroke hgi-checkmark-circle-02"></i>Automatic release on expiry</li></ul><div class="contract-box"><small>FREEZE REGISTRY</small><strong>0xD011…7E0</strong><span>GIWA Sepolia</span></div></div></div></section>
+    </main>
+  </div>
+
+  <div id="demoModal" class="modal" aria-hidden="true"><div class="modal-card glass"><button class="modal-close" aria-label="Close"><i class="hgi hgi-stroke hgi-cancel-01"></i></button><div class="demo-stage"><div class="demo-icon"><i class="hgi hgi-stroke hgi-shield-02"></i></div><span>90-SECOND PRODUCT STORY</span><h2>From stolen to returned.</h2><p>Watch a suspicious transfer enter its challenge window, receive a verified freeze attestation, and return to its owner.</p><div class="demo-flow"><span>Transfer</span><i></i><span>Attest</span><i></i><span>Freeze</span><i></i><span>Return</span></div><button id="runDemo" class="primary-btn"><i class="hgi hgi-stroke hgi-play-circle"></i> Run interactive demo</button></div></div></div>
+  <script src="icons-fallback.js"></script>
+  <script src="app.js"></script>
+  <script src="motion.js"></script>
+</body>
+</html>

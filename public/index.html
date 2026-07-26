@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#06100d"><meta name="description" content="Dollyeo makes crypto fraud response verifiable, narrow and fast on GIWA.">
+  <title>Dollyeo — Your money deserves a way back</title>
+<link rel="stylesheet" href="landing.css"><link rel="stylesheet" href="clay-theme.css"><link rel="stylesheet" href="liquid-motion.css"><link rel="stylesheet" href="brand-polish.css">
+</head>
+<body>
+  <canvas id="aurora" aria-hidden="true"></canvas><div class="grain"></div><div class="cursor-glow"></div>
+  <header class="site-header liquid" data-reveal>
+    <a class="logo" href="#top"><span class="logo-mark">ㄷ</span><span><b>Dollyeo</b><small>Give it back</small></span></a>
+    <nav><a href="#how">How it works</a><a href="#network">Network</a><a href="#safety">Safety</a><a href="#developers">Developers</a></nav>
+    <div class="header-cta"><a class="text-link" href="app.html">Open dashboard</a><a class="pill-button small magnetic" href="app.html#report">Report an incident <i class="hgi hgi-stroke hgi-arrow-up-right-01"></i></a></div>
+    <button class="menu" aria-label="Open navigation"><i class="hgi hgi-stroke hgi-menu-02"></i></button>
+  </header>
+
+  <main id="top">
+    <section class="hero-section">
+      <div class="hero-copy" data-reveal>
+        <div class="announce"><span class="ping"></span>Built for GIWA Sepolia <i></i> Public testnet live</div>
+        <h1>Stolen crypto<br>should have a<br><em>way back.</em></h1>
+        <p>Dollyeo is an opt-in protection rail that gives verified authorities a short, transparent window to stop fraudulent transfers—without surrendering self-custody.</p>
+        <div class="hero-actions"><a class="pill-button magnetic" href="app.html#report"><i class="hgi hgi-stroke hgi-alert-02"></i> Start a protected report</a><button class="ghost-button magnetic" id="storyButton"><span class="play"><i class="hgi hgi-stroke hgi-play"></i></span> Watch the 60-sec story</button></div>
+        <div class="trust-line"><span>VERIFIABLE BY DESIGN</span><i></i><div><b>External issuers</b><b>Expiring orders</b><b>Public audit trail</b></div></div>
+      </div>
+
+      <div class="hero-machine" data-reveal data-delay="1">
+        <div class="halo h1"></div><div class="halo h2"></div><div class="halo h3"></div>
+        <div class="orbital orbital-one"><span></span></div><div class="orbital orbital-two"><span></span></div>
+        <div class="core-card liquid tilt-card">
+          <div class="core-top"><span><i class="hgi hgi-stroke hgi-shield-02"></i></span><div><small>PROTECTED TRANSFER</small><b>Challenge window</b></div><em>LIVE</em></div>
+          <div class="timer"><span>00</span><i>:</i><span>29</span><i>:</i><span>42</span></div>
+          <div class="timer-labels"><span>HOURS</span><span>MINUTES</span><span>SECONDS</span></div>
+          <div class="transfer"><div class="coin">₩</div><div><small>INCOMING VALUE</small><b>12,400 USDT</b></div><span class="verified"><i class="hgi hgi-stroke hgi-checkmark-circle-02"></i> monitored</span></div>
+          <div class="core-footer"><span class="mini-avatar">SK</span><span>0x71A4…09F2</span><i class="hgi hgi-stroke hgi-arrow-right-02"></i><span>0x9C21…84AD</span></div>
+        </div>
+        <div class="float-card issuer liquid"><span class="float-icon violet"><i class="hgi hgi-stroke hgi-certificate-01"></i></span><div><small>ATTESTATION</small><b>Issuer verified</b></div><i class="hgi hgi-stroke hgi-checkmark-circle-02 check"></i></div>
+        <div class="float-card custody liquid"><span class="float-icon mint"><i class="hgi hgi-stroke hgi-key-02"></i></span><div><small>CONTROL</small><b>Keys stay yours</b></div></div>
+        <div class="float-card proof liquid"><span class="float-icon blue"><i class="hgi hgi-stroke hgi-blockchain-02"></i></span><div><small>PROOF</small><b>On-chain & public</b></div></div>
+        <div class="chain-pill liquid"><span></span>GIWA Sepolia <b>91342</b></div>
+      </div>
+      <div class="scroll-cue"><span>SCROLL TO EXPLORE</span><i class="hgi hgi-stroke hgi-arrow-down-02"></i></div>
+    </section>
+
+    <section class="proof-bar" data-reveal><p>Designed for the moments where every minute matters.</p><div class="proof-items"><article><strong data-count="8">0</strong><span>min median response</span></article><i></i><article><strong data-count="94">0</strong><sup>%</sup><span>simulated recovery rate</span></article><i></i><article><strong data-count="24">0</strong><span>mock verified issuers</span></article><i></i><article><strong>₩1.84B</strong><span>test value protected</span></article></div><small>Prototype metrics shown for demonstration.</small></section>
+
+    <section id="how" class="section how-section">
+      <div class="section-head" data-reveal><span class="kicker">01 — HOW IT WORKS</span><h2>A narrow window.<br><em>A fair process.</em></h2><p>Four verifiable steps replace opaque calls, spreadsheets and discretionary access.</p></div>
+      <div class="steps-track">
+        <article class="step-card liquid" data-reveal><span class="step-no">01</span><div class="step-visual send"><span class="wallet w1"><i class="hgi hgi-stroke hgi-wallet-01"></i></span><span class="flow-line"><b></b></span><span class="wallet w2"><i class="hgi hgi-stroke hgi-user-question-01"></i></span></div><h3>A protected transfer enters</h3><p>The sender opts into a short challenge window for high-value transfers. Outside the window, settlement is final.</p><small>OPT-IN BY THE SENDER</small></article>
+        <article class="step-card liquid" data-reveal data-delay="1"><span class="step-no">02</span><div class="step-visual attest"><span class="seal"><i class="hgi hgi-stroke hgi-certificate-01"></i></span><span class="signature"></span><span class="signature short"></span></div><h3>An issuer attests</h3><p>A verified bank, VASP or authority signs a reason, case reference and automatic expiry using Dojang.</p><small>NO PRIVATE ADMIN KEY</small></article>
+        <article class="step-card liquid" data-reveal data-delay="2"><span class="step-no">03</span><div class="step-visual frozen"><span class="snow s1">✦</span><span class="snow s2">✦</span><span class="lock"><i class="hgi hgi-stroke hgi-lock-01"></i></span><span class="ring"></span></div><h3>Settlement pauses</h3><p>The protected account validates the attestation and pauses only the disputed transfer until review completes.</p><small>PUBLIC & TIME-LIMITED</small></article>
+        <article class="step-card liquid" data-reveal data-delay="3"><span class="step-no">04</span><div class="step-visual return"><span class="person"><i class="hgi hgi-stroke hgi-user-heart-01"></i></span><span class="return-line"><b></b></span><span class="coin-stack">₩</span></div><h3>Funds return—or release</h3><p>A valid decision returns value to the victim. If no decision arrives, the contract releases automatically.</p><small>DUE PROCESS ENCODED</small></article>
+      </div>
+    </section>
+
+    <section id="network" class="section network-section">
+      <div class="network-glow"></div><div class="section-head centered" data-reveal><span class="kicker">02 — LIVE INTELLIGENCE</span><h2>One report helps<br><em>protect the network.</em></h2><p>Every verified incident improves a privacy-safe registry that wallets can check before users press send.</p></div>
+      <div class="threat-console liquid" data-reveal>
+        <div class="console-top"><div class="traffic"><span></span><span></span><span></span></div><b>Threat Registry / Live</b><div class="live"><i></i>SYNCED · BLOCK 9,842,114</div></div>
+        <div class="search-mock"><i class="hgi hgi-stroke hgi-search-01"></i><span>0x9C21E8f2dA9784AD</span><kbd>SEARCH</kbd></div>
+        <div class="result-grid"><div class="risk-score"><div class="score-ring"><span>82</span><small>/100</small></div><div><small>RISK CLASSIFICATION</small><h3>Critical risk</h3><p>2 verified attestations · 4 linked incidents</p></div></div><div class="intel-lines"><span><i>Issuer</i><b>Mock FIU Korea</b></span><span><i>Attestation</i><b>#AT-94821</b></span><span><i>Expiry</i><b>23h 42m</b></span></div><div class="graph-mini"><span class="node main"></span><span class="node n1"></span><span class="node n2"></span><span class="node n3"></span><span class="edge e1"></span><span class="edge e2"></span><span class="edge e3"></span></div></div>
+      </div>
+      <div class="network-benefits"><article data-reveal><i class="hgi hgi-stroke hgi-api"></i><h3>One-second wallet check</h3><p>A public read endpoint for wallets, exchanges and payment applications.</p></article><article data-reveal data-delay="1"><i class="hgi hgi-stroke hgi-anonymous"></i><h3>No victim PII on-chain</h3><p>Only encrypted evidence digests and privacy-safe attestations are recorded.</p></article><article data-reveal data-delay="2"><i class="hgi hgi-stroke hgi-share-08"></i><h3>Network effects from day one</h3><p>Every issuer and integration makes the shared defense layer more useful.</p></article></div>
+    </section>
+
+    <section id="safety" class="section principles-section">
+      <div class="principle-copy" data-reveal><span class="kicker">03 — THE NON-NEGOTIABLE</span><h2>No backdoor.<br>No hidden freeze.<br><em>No exceptions.</em></h2><p>Dollyeo is not a custodial freezing service. It is a transparent protocol for opt-in protected accounts and externally attested due process.</p><a class="inline-link" href="app.html#console">Explore the issuer console <i class="hgi hgi-stroke hgi-arrow-right-01"></i></a></div>
+      <div class="principle-stack"><article class="liquid" data-reveal><span>01</span><i class="hgi hgi-stroke hgi-user-lock-01"></i><div><h3>You keep custody</h3><p>Dollyeo never holds user assets or recovery keys.</p></div></article><article class="liquid" data-reveal data-delay="1"><span>02</span><i class="hgi hgi-stroke hgi-timer-02"></i><div><h3>Every order expires</h3><p>No indefinite flags. The contract releases automatically.</p></div></article><article class="liquid" data-reveal data-delay="2"><span>03</span><i class="hgi hgi-stroke hgi-eye"></i><div><h3>Every action is visible</h3><p>Issuer, reason, timestamp and resolution are auditable.</p></div></article><article class="liquid" data-reveal data-delay="3"><span>04</span><i class="hgi hgi-stroke hgi-justice-scale-01"></i><div><h3>Authorities attest—not control</h3><p>Verified issuers can submit evidence, never take arbitrary custody.</p></div></article></div>
+    </section>
+
+    <section id="developers" class="section developer-section liquid" data-reveal>
+      <div><span class="kicker">04 — BUILT ON GIWA</span><h2>Ship the protection<br>layer with us.</h2><p>Solidity contracts, testnet deployment and a product-ready reference interface for GIWA builders.</p><div class="code-tags"><span>Solidity</span><span>OP Stack</span><span>Dojang</span><span>GIWA ID</span><span>viem</span></div><div class="dev-actions"><a class="pill-button" href="app.html"><i class="hgi hgi-stroke hgi-dashboard-square-01"></i> Launch prototype</a><a class="ghost-button" href="https://docs.giwa.io/" target="_blank" rel="noreferrer"><i class="hgi hgi-stroke hgi-source-code"></i> GIWA documentation</a></div></div>
+      <div class="code-window"><div class="code-head"><span></span><span></span><span></span><b>FreezeRegistry.sol</b></div><pre><code><em>function</em> verifyOrder(
+  Attestation <b>calldata</b> order
+) <em>external view returns</em> (<b>bool</b>) {
+  <i>// issuer + reason + expiry</i>
+  <em>return</em> dojang.verify(order)
+    && order.expiresAt > block.timestamp
+    && protected[order.account];
+}</code></pre><div class="deploy-status"><span></span>Deployed on GIWA Sepolia <b>0xD011…7E0</b></div></div>
+    </section>
+
+    <section class="final-cta"><div class="cta-orbit"></div><div data-reveal><span class="logo-mark large">ㄷ</span><span class="kicker">GIVE IT BACK</span><h2>Protection should be<br>a choice—not a privilege.</h2><p>Experience the complete Dollyeo prototype on GIWA Sepolia.</p><div><a class="pill-button magnetic" href="app.html"><i class="hgi hgi-stroke hgi-arrow-up-right-01"></i> Open the live prototype</a><a class="ghost-button magnetic" href="app.html#registry">Check a wallet</a></div></div></section>
+  </main>
+
+  <footer><a class="logo" href="#top"><span class="logo-mark">ㄷ</span><span><b>Dollyeo</b><small>돌려 · Give it back</small></span></a><p>A verifiable freeze-and-refund rail for opt-in protected accounts.</p><div><a href="#how">Product</a><a href="#safety">Safety</a><a href="https://docs.giwa.io/" target="_blank">GIWA</a><a href="app.html">Prototype</a></div><small>Prototype · GIWA Sepolia · No real funds</small></footer>
+
+  <div class="story-modal" aria-hidden="true"><div class="story-card liquid"><button class="story-close"><i class="hgi hgi-stroke hgi-cancel-01"></i></button><div class="story-scene"><span class="scene-kicker">INTERACTIVE STORY</span><div class="scene-visual"><div class="story-shield"><i class="hgi hgi-stroke hgi-shield-02"></i></div><div class="story-status">Ready</div></div><h2>Watch stolen value find its way back.</h2><p>A transfer enters a 30-minute protection window. A verified order arrives. Settlement pauses. The victim receives a provable resolution.</p><div class="story-progress"><i></i></div><button class="pill-button" id="runStory"><i class="hgi hgi-stroke hgi-play"></i> Run the story</button></div></div></div>
+  <script src="icons-fallback.js"></script><script src="landing.js"></script><script src="motion.js"></script>
+</body></html>

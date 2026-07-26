@@ -1,0 +1,39 @@
+datasource db {
+  provider = "sqlite"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Case {
+  id              String   @id @default(cuid())
+  transactionHash String   @unique
+  asset           String
+  amount          Float
+  from            String
+  to              String
+  incidentType    String
+  status          String   @default("pending")
+  createdAt       DateTime @default(now())
+}
+
+model Attestation {
+  id         String   @id @default(cuid())
+  caseNumber String
+  account    String
+  expiresAt  DateTime
+  reason     String
+  status     String   @default("active")
+  createdAt  DateTime @default(now())
+}
+
+model Threat {
+  id        String   @id @default(cuid())
+  address   String   @unique
+  riskLevel String
+  category  String
+  score     Int
+  updatedAt DateTime @updatedAt
+  createdAt DateTime @default(now())
+}
