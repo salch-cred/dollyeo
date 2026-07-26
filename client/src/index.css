@@ -1,9 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @import url("https://cdn.hugeicons.com/font/hgi-stroke-rounded.css");
 @import "/styles.css";
 @import "/clay-theme.css";
 @import "/liquid-motion.css";
 @import "/brand-polish.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
